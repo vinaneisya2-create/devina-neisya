@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    margin: 20px;
+}
+
+/* Judul dengan warna yang menarik */
+h1 {
+    text-align: center;
+    color: #2980b9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 5px solid #3498db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+td.align-top {
+    vertical-align: top;
+}
+
+/* Memberikan warna pada label agar lebih berwarna */
+label {
+    cursor: pointer;
+    color: #16a085;
+    font-weight: bold;
+}
+
+td strong {
+    color: #8e44ad;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #34495e;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.3);
+}
+
+p {
+    margin: 4px 0;
+}
+
+/* Tombol Kirim dengan warna hijau cerah */
+input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #219653;
+}

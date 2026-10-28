@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Lomba</title>
+    <style type="text/css">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #333333;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        tr {
+            border-bottom: 1px solid #edf2f7;
+        }
+        td {
+            padding: 14px 10px;
+            vertical-align: middle;
+        }
+        td.align-top {
+            vertical-align: top;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 2px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+            background-color: #f8fafc;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        input[type="text"]:focus, select:focus, textarea:focus {
+            border-color: #2563eb;
+            background-color: #ffffff;
+            box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+            outline: none;
+        }
+        p {
+            margin: 6px 0;
+        }
+        label {
+            cursor: pointer;
+            color: #1e293b;
+        }
+        input[type="submit"] {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+            transition: all 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(37, 99, 235, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulir Registrasi Lomba</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+    <table cellspacing="4" cellpadding="4" border="0"
+        style="border-collapse:collapse; width:100%;">
+    <tr>
+        <td>
+            <label for="namatim"><strong>Nama Tim Peserta</strong></label>
+        </td>
+        <td>
+            <input type="text" id="namatim" name="namatim" size="30" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="ketua"><strong>Nama Ketua Tim</strong></label>
+        </td>
+        <td>
+            <input type="text" id="ketua" name="ketua" size="30" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="jumlah"><strong>Jumlah Anggota Tim</strong></label>
+        </td>
+        <td>
+            <select id="jumlah" name="jumlah">
+                <option>1 Orang</option>
+                <option>2 Orang</option>
+                <option>3 Orang</option>
+                <option>4 Orang</option>
+                <option>5 Orang</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="telepon"><strong>Nomor Telepon (Perwakilan Anggota)</strong></label>
+        </td>
+        <td>
+            <input type="text" id="telepon" name="telepon" size="30" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="universitas">
+                <strong>Asal Perguruan Tinggi</strong>
+            </label>
+        </td>
+        <td>
+            <input type="text" id="universitas" name="universitas" size="30" />
+        </td>
+    </tr>
+    <tr>
+        <td class="align-top">
+            <strong>Kategori Bidang Lomba</strong>
+        </td>
+        <td>
+            <p>
+                <input type="checkbox" id="coding" name="bidang" value="Coding" />
+                <label for="coding">Coding</label>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="desain" name="bidang" value="Desain" />
+                <label for="desain">Desain</label>
+            </p>
+            <p>
+                <input type="checkbox" id="video" name="bidang" value="Video" />
+                <label for="video">Video</label>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="essay" name="bidang" value="Essay" />
+                <label for="essay">Essay</label>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Status Jenis Peserta</strong>
+        </td>
+        <td>
+            <input type="radio" id="mahasiswa" name="peserta" value="Mahasiswa" />
+            <label for="mahasiswa">Mahasiswa</label>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" id="umum" name="peserta" value="Umum" />
+            <label for="umum">Umum</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="align-top">
+            <label for="deskripsi">
+                <strong>Ringkasan / Deskripsi Karya</strong>
+            </label>
+        </td>
+        <td>
+            <textarea id="deskripsi" name="deskripsi" rows="10" cols="30"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td class="align-top">
+            <label for="alasan">
+                <strong>Alasan Mengikuti Ajang Lomba</strong>
+            </label>
+        </td>
+        <td>
+            <textarea id="alasan" name="alasan" rows="7" cols="30"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="filekarya"><strong>Berkas File Karya</strong></label>
+        </td>
+        <td>
+            <input type="file" id="filekarya" name="filekarya" accept="application/pdf, image/jpeg, image/png" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center; padding-top: 20px;">
+            <input type="submit" name="daftar" value="Kirim Pendaftaran" />
+        </td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>
